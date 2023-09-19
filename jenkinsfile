@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh """
                    ls -l /home
-                   
+                   sleep 20
                    """
             }
         }
