@@ -17,7 +17,6 @@ pipeline {
                    ls -l /home
                    sudo docker pull ubuntu
                    sudo docker images
-                   test
                    """
             }
         }
