@@ -1,17 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
         stage('Build') {
             steps {
                 sh """
                    ls -l /home
-                   sudo docker pull ubuntu
-                   sudo docker images
+                   
                    """
             }
         }
@@ -19,8 +13,7 @@ pipeline {
             steps {
                 sh """
                    ls -l /home
-                   sudo docker pull ubuntu
-                   sudo docker images
+                   
                    """
             }
         }
@@ -28,8 +21,6 @@ pipeline {
             steps {
                 sh """
                    ls -l /home
-                   sudo docker pull ubuntu
-                   sudo docker images
                    """
             }
         }
