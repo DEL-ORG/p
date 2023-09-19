@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh """
                    ls -l /home
-                   ls -l /
+                   sleep 5
                    """
             }
         }
